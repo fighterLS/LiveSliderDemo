@@ -15,6 +15,9 @@
 		C233FDEB1E5456E9002B511A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C233FDE91E5456E9002B511A /* LaunchScreen.storyboard */; };
 		C233FDF61E5456E9002B511A /* LiveSlideDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C233FDF51E5456E9002B511A /* LiveSlideDemoTests.m */; };
 		C233FE011E5456E9002B511A /* LiveSlideDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C233FE001E5456E9002B511A /* LiveSlideDemoUITests.m */; };
+		C233FE151E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C233FE101E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.m */; };
+		C233FE161E5456F8002B511A /* BaseLiveSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C233FE121E5456F8002B511A /* BaseLiveSlideViewController.m */; };
+		C233FE1A1E5457BD002B511A /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C233FE191E5457BD002B511A /* UIView+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		C233FDFC1E5456E9002B511A /* LiveSlideDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveSlideDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C233FE001E5456E9002B511A /* LiveSlideDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveSlideDemoUITests.m; sourceTree = "<group>"; };
 		C233FE021E5456E9002B511A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C233FE0F1E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseLiveSlideViewController+PanGesture.h"; sourceTree = "<group>"; };
+		C233FE101E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseLiveSlideViewController+PanGesture.m"; sourceTree = "<group>"; };
+		C233FE111E5456F8002B511A /* BaseLiveSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLiveSlideViewController.h; sourceTree = "<group>"; };
+		C233FE121E5456F8002B511A /* BaseLiveSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLiveSlideViewController.m; sourceTree = "<group>"; };
+		C233FE181E5457BD002B511A /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		C233FE191E5457BD002B511A /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		C233FDDA1E5456E9002B511A /* LiveSlideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C233FE0E1E5456F8002B511A /* BaseLiveSlideView */,
 				C233FDDE1E5456E9002B511A /* AppDelegate.h */,
 				C233FDDF1E5456E9002B511A /* AppDelegate.m */,
 				C233FDE11E5456E9002B511A /* ViewController.h */,
@@ -138,6 +148,19 @@
 				C233FE021E5456E9002B511A /* Info.plist */,
 			);
 			path = LiveSlideDemoUITests;
+			sourceTree = "<group>";
+		};
+		C233FE0E1E5456F8002B511A /* BaseLiveSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				C233FE0F1E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.h */,
+				C233FE101E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.m */,
+				C233FE111E5456F8002B511A /* BaseLiveSlideViewController.h */,
+				C233FE121E5456F8002B511A /* BaseLiveSlideViewController.m */,
+				C233FE181E5457BD002B511A /* UIView+YYAdd.h */,
+				C233FE191E5457BD002B511A /* UIView+YYAdd.m */,
+			);
+			path = BaseLiveSlideView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +298,10 @@
 			files = (
 				C233FDE31E5456E9002B511A /* ViewController.m in Sources */,
 				C233FDE01E5456E9002B511A /* AppDelegate.m in Sources */,
+				C233FE1A1E5457BD002B511A /* UIView+YYAdd.m in Sources */,
 				C233FDDD1E5456E9002B511A /* main.m in Sources */,
+				C233FE161E5456F8002B511A /* BaseLiveSlideViewController.m in Sources */,
+				C233FE151E5456F8002B511A /* BaseLiveSlideViewController+PanGesture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

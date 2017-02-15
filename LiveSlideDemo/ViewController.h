@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "BaseLiveSlideViewController.h"
+@interface ViewController :BaseLiveSlideViewController
 
 
 @end
